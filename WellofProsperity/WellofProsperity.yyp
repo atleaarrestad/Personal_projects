@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "021a08c4-1442-4f5a-872e-4b2c412b064d",
+            "Value": {
+                "id": "b2d408cc-bfc2-4c8a-b03e-63f359d41503",
+                "resourcePath": "scripts\\s_GUI_getNineSliceSprite\\s_GUI_getNineSliceSprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "031f3c92-b5cc-420f-a576-2266d584a841",
             "Value": {
                 "id": "59ff0ae2-d25e-4f39-8051-43e1bb3c2e9d",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "bed9d4af-94a3-4674-8a0f-d76a9887392a",
+            "Value": {
+                "id": "021487bd-2eaa-4ea5-b047-632d084c2508",
+                "resourcePath": "objects\\GUI\\GUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bef421ef-65b8-4cd5-a151-d51be2322617",
             "Value": {
                 "id": "a9cf58f8-c622-437f-b5f6-91f8fb37fb3e",
@@ -611,6 +627,7 @@
         "2bffe134-0b14-49e1-beb8-65e266e5683a",
         "edf539fb-1eaa-409c-a3c6-873699dcc6d0",
         "b14e909b-c02a-46bc-87b3-227bc262d412",
+        "021a08c4-1442-4f5a-872e-4b2c412b064d",
         "fa38fa3b-fb09-4a55-a69f-17654d089d26"
     ],
     "tutorial": ""

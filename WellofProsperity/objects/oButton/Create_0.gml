@@ -8,6 +8,7 @@ textColor = c_black;
 font = fntButtonExit;
 text = "X";
 windowSprite = s_windowBorderStandard12x12;
+windowSpriteSliced = pointer_null
 hoveringOver = false;
 
 targetID = 0

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Initialize
 // You can write your code in this editor
 
 
@@ -9,17 +9,22 @@ for(v = 0; v < invSlotsV; v++){
 	for (h = 0; h < invSlotsH; h++){
 		var i = h + invSlotsH*v
 		invSlot[i] = instance_create_layer(0, 0, "GUI", oItemSlot)
-		with (invSlot[i]){event_user(event.GUI_INIT)}
-		ds_list_add(instancesToDestroy, invSlot[i])
 		
-		invSlot[i].startX = startX + h*invSlot[i].width + padding
-		invSlot[i].startY = startY + v*invSlot[i].height + padding
+		var slot = invSlot[i]
+		slot.windowWidth = invSlotWidth
+		slot.windowHeight = invSlotHeight
+		//slot.drawMe = false
+		
+		with (slot){event_user(event.GUI_INIT)}
+		ds_list_add(instancesToDestroy, invSlot[i])
+		invSlot[i].startX = startX + h*invSlot[i].windowWidth + padding
+		invSlot[i].startY = startY + v*invSlot[i].windowHeight + padding
 	}
 }
 
 //Set window size to fit the inventory
-width = invSlot[0].width * invSlotsH + padding*2
-height = invSlot[0].height * invSlotsV + padding*2
+windowWidth = invSlot[0].windowWidth * invSlotsH + padding*2
+windowHeight = invSlot[0].windowHeight * invSlotsV + padding*2
 invSize = invSlotsH * invSlotsV
 
 
@@ -31,7 +36,7 @@ for (i = 0; i < invSize; i++){
 
 
 //Init window with no exitbutton
-exitButton = false;
+exitButton = true;
 event_inherited()
 
 show_debug_message("Inventory created! (userEventInventory)")
